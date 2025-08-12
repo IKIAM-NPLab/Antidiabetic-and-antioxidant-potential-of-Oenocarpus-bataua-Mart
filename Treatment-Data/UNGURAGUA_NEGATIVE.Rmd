@@ -60,7 +60,7 @@ library(ggsci)
 Then, a log system was added to have a record of each process executed.
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE, error=FALSE}
-init_log(log_file = "RESULTADOS/Results_1.txt")
+init_log(log_file = "Results_neg.txt")
 ```
 
 Next, the feature list was imported.
@@ -88,7 +88,7 @@ mode <- modes$RP_negative
 
 As a additional step, we can visualize the raw data in order to inspect the processing routines.
 
-```{r echo=TRUE, message=FALSE, warning=FALSE, error=FALSE, results='hide'}
+```{r echo=TRUE, error=FALSE, fig.height=4, fig.width=8, message=FALSE, warning=FALSE, results='hide'}
 Prueba_mode <- modes$RP_negative
 POS_raw_sambx <- plot_sample_boxplots(Prueba_mode, order_by = "Subgroup", fill_by = "Subgroup")
 POS_raw_pca <- plot_pca(Prueba_mode, color = "QC")
@@ -123,7 +123,7 @@ corrected <- flag_quality(corrected)
 
 Then we can visualize the correction for QCs.
 
-```{r echo=TRUE, message=FALSE, warning=FALSE, error=FALSE}
+```{r echo=TRUE, error=FALSE, fig.height=4, fig.width=8, message=FALSE, warning=FALSE, results='hide'}
 EI_corr_sambx <- plot_sample_boxplots(corrected, order_by = "Subgroup", fill_by = "Subgroup")
 EI_corr_pca <- plot_pca(corrected, center = T)
 EI_corr_pca + EI_corr_sambx
@@ -131,8 +131,8 @@ EI_corr_pca + EI_corr_sambx
 ```
 
 
-```{r echo=TRUE, message=FALSE, warning=FALSE, error=FALSE}
-EI_PCA_2<-plot_pca(compressed, color = "Subgroup")
+```{r echo=TRUE, error=FALSE, fig.height=4, fig.width=8, message=FALSE, warning=FALSE, results='hide'}
+EI_PCA_2<-plot_pca(corrected, color = "Subgroup")
 EI_PCA_2
 ```
 imputación de datos
@@ -141,7 +141,7 @@ imputación de datos
 
 # To clean data
 set.seed(8)
-imputed <- impute_rf(compressed)
+imputed <- impute_rf(corrected)
 
 
 # Probabilistic quotient normalization
@@ -190,9 +190,14 @@ ggplot(scores, aes(PC1, PC2, color = Subgroup, shape = Subgroup)) + geom_point(s
   theme_classic()
 
 # Save plot
-ggsave('resultados/unguragua.png', width = 5, height = 4, device='png', dpi="print")
+ggsave('unguragua_nrg.png', width = 5, height = 4, device='png', dpi="print")
+```
+#Finish a record.
+
+```{r}
+finish_log()
 ```
 
-finish_log()
-#Finish a record.
-```
+
+
+
