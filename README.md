@@ -4,5 +4,5 @@
 The present document aims to record the procedure given for the data used in the statistical analysis of secondary metabolites present in Ungurahua
 
 # Analysis Notebooks
-- [PCA_POS_QC](https://github.com/IKIAM-NPLab/Vibrio-diabolicus-Ili-/blob/main/Noteboks/PCA_POS_QC.md)
-- [PCA_NEG_QC](https://github.com/IKIAM-NPLab/Vibrio-diabolicus-Ili-/blob/main/Noteboks/PCA_NEG_QC.md)
+- [NEG_QC_[M-H]-](https://github.com/IKIAM-NPLab/Antidiabetic-and-antioxidant-potential-of-Oenocarpus-bataua-Mart/blob/main/UNGURAGUA_NEGATIVE.Rmd)
+- [POS_QC_[M+H]+](https://github.com/IKIAM-NPLab/Antidiabetic-and-antioxidant-potential-of-Oenocarpus-bataua-Mart/blob/main/UNGURAGUA_POSITIVE.Rmd)
