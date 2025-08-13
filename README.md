@@ -10,8 +10,8 @@ Also, the Raw data were in: [Metobolights_data_Full_scan](https://www.ebi.ac.uk/
 
 ## Useful results
 # Data to Metaboloanalyst
--[Positive](https://github.com/IKIAM-NPLab/Antidiabetic-and-antioxidant-potential-of-Oenocarpus-bataua-Mart/tree/main/Results/Metaboloanalysis/Positive)
--[Negative](https://github.com/IKIAM-NPLab/Antidiabetic-and-antioxidant-potential-of-Oenocarpus-bataua-Mart/tree/main/Results/Metaboloanalysis/Negative)
+- [Positive](https://github.com/IKIAM-NPLab/Antidiabetic-and-antioxidant-potential-of-Oenocarpus-bataua-Mart/tree/main/Results/Metaboloanalysis/Positive)
+- [Negative](https://github.com/IKIAM-NPLab/Antidiabetic-and-antioxidant-potential-of-Oenocarpus-bataua-Mart/tree/main/Results/Metaboloanalysis/Negative)
 
 # PCA analysis
 - NEG_QC_[M-H]-
