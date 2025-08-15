@@ -6,7 +6,7 @@ This repository contains the workflow and data processing steps used for the sta
 It includes raw and processed datasets, scripts for data treatment, and visualizations employed in the metabolomics analysis.  
 
 The raw data are available at:  
-[MetaboLights - Full Scan Data](https://www.ebi.ac.uk/metabolights/editor/guide/upload/REQ20250812212442)  
+[Zenodo - Full Scan Data]([https://www.ebi.ac.uk/metabolights/editor/guide/upload/REQ20250812212442](https://zenodo.org/records/16882298?preview=1&token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjZiNTAyYTE2LTBiYjAtNGEwZC04MDY5LTM2N2Q1ZDI1M2Y0ZCIsImRhdGEiOnt9LCJyYW5kb20iOiI1MjdiMDk5ZmNlYjExYTc4ZmNmZDZmZTdhZmMwMDRjZCJ9.DY81X6x5kSS7T_MHhY3pu1kh2nnyd0epA6SJ_MTM4_hZDq3yc_sYQon_fDHHEdGtFDpP0_mWtagGrcaMDaWeNg))  
 
 ---
 
